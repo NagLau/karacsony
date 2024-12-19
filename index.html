@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,21 @@
 </head>
 <body>
     <h1>Karácsony</h1>
-    <p>A karácsony az év legszebb és legmeghittebb ünnepe. Ilyenkor a családok összegyűlnek a szeretteikkel és közösen ünneplik a karácsonyt. Szent Miklós, az eredeti mikulás történetéből eredően, az emberek ajándékokkal lepik meg egymást.</p>
+    <p>A karácsony az év legszebb és legmeghittebb ünnepe. Ilyenkor a családok összegyűlnek a szeretteikkel és közösen
+        ünneplik a karácsonyt. Szent Miklósnak, az eredeti mikulásnak történetéből eredően, az emberek ajándékokkal
+        lepik meg egymást.</p>
     <h2>Karácsony alkalmából válaszd ki a számodra legjobb ajándékot!</h2>
-    <p>-Kattintással jelöld a kiválasztott ajándékot-</p>
+    <p>-Kattintással jelöld a kiválasztott ajándékot-/vagy adj hozzá saját ajándékötletet-</p>
+
+    <button id="adjHozza" class="btn btn-primary">Add hozzá az ajándékot!</button>          
+    <input type="text" id="inputField" placeholder="Ide írj!">
+    
+
+
+    <button id="mutasd" class="btn btn-primary">Mutasd a kiválasztott ajándékot!</button>
+    <p id="result"></p>
+
+
     <div class="card-container">
         <div class="card">
             <div class="card-image"><img src="ajandekutalvany.jpg" alt=""></div>
@@ -19,7 +32,7 @@
                 <h3>ELSŐ AJÁNDÉK</h3>
                 <p1>Ajándékkárya a DM-ből</p1>
             </div>
-            <div class="card-footer">Last updated _ mins ago</div>
+            <div class="card-footer">Kattints ha szeretnéd!</div>
         </div>
 
         <div class="card">
@@ -28,7 +41,7 @@
                 <h3>MÁSODIK AJÁNDÉK</h3>
                 <p1>Teacsomag bögrével (nem unicummal)</p1>
             </div>
-            <div class="card-footer">Last updated _ mins ago</div>
+            <div class="card-footer">Kattints ha szeretnéd!</div>
         </div>
 
         <div class="card">
@@ -37,7 +50,7 @@
                 <h3>HARMADIK AJÁNDÉK</h3>
                 <p1>Díszpárna</p1>
             </div>
-            <div class="card-footer">Last updated _ mins ago</div>
+            <div class="card-footer">Kattints ha szeretnéd!</div>
         </div>
 
         <div class="card">
@@ -46,7 +59,7 @@
                 <h3>NEGYEDIK AJÁNDÉK</h3>
                 <p1>Szép virág</p1>
             </div>
-            <div class="card-footer">Last updated _ mins ago</div>
+            <div class="card-footer">Kattints ha szeretnéd!</div>
         </div>
 
         <div class="card">
@@ -55,7 +68,7 @@
                 <h3>ÖTÖDIK AJÁNDÉK</h3>
                 <p1>Óra (mert nincs időérzéked)</p1>
             </div>
-            <div class="card-footer">Last updated _ mins ago</div>
+            <div class="card-footer">Kattints ha szeretnéd!</div>
         </div>
 
         <div class="card">
@@ -64,7 +77,7 @@
                 <h3>HATODIK AJÁNDÉK</h3>
                 <p1>Karácsonyi Itóka</p1>
             </div>
-            <div class="card-footer">Last updated _ mins ago</div>
+            <div class="card-footer">Kattints ha szeretnéd!</div>
         </div>
 
         <div class="card">
@@ -73,7 +86,7 @@
                 <h3>HETEDIK AJÁNDÉK</h3>
                 <p1>Jó téli cipő (biztos nagyon meleg)</p1>
             </div>
-            <div class="card-footer">Last updated _ mins ago</div>
+            <div class="card-footer">Kattints ha szeretnéd!</div>
         </div>
 
         <div class="card">
@@ -82,7 +95,7 @@
                 <h3>NYOLCADIK AJÁNDÉK</h3>
                 <p1>Olivia a cseléd</p1>
             </div>
-            <div class="card-footer">Last updated _ mins ago</div>
+            <div class="card-footer">Kattints ha szeretnéd!</div>
         </div>
 
         <div class="card">
@@ -91,7 +104,7 @@
                 <h3>KILENCEDIK AJÁNDÉK</h3>
                 <p1>Karácsonyi álomautó</p1>
             </div>
-            <div class="card-footer">Last updated _ mins ago</div>
+            <div class="card-footer">Kattints ha szeretnéd!</div>
         </div>
 
         <div class="card">
@@ -100,7 +113,7 @@
                 <h3>TIZEDIK AJÁNDÉK</h3>
                 <p1>Cuki háziállat</p1>
             </div>
-            <div class="card-footer">Last updated _ mins ago</div>
+            <div class="card-footer">Kattints ha szeretnéd!</div>
         </div>
 
         <div class="card">
@@ -109,7 +122,7 @@
                 <h3>TIZENEGYEDIK AJÁNDÉK</h3>
                 <p1>Pótlék, reggelire való</p1>
             </div>
-            <div class="card-footer">Last updated _ mins ago</div>
+            <div class="card-footer">Kattints ha szeretnéd!</div>
         </div>
 
         <div class="card">
@@ -118,15 +131,10 @@
                 <h3>TIZENKETTEDIK AJÁNDÉK</h3>
                 <p1>Cuki plüss</p1>
             </div>
-            <div class="card-footer">Last updated _ mins ago</div>
+            <div class="card-footer">Kattints ha szeretnéd!</div>
         </div>
-
-        <button id="mutasd" class="btn btn-primary">Mutasd a listát</button>
-        <p id="result" 
-        style="font-size: 5px; 
-        color: rgb(19, 224, 19);">
-    </p>
+        </p>
     </div>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
